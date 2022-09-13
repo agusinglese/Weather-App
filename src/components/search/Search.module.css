@@ -1,0 +1,47 @@
+.formulario {
+  margin: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+  outline: none;
+  width: 20%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  background-image: linear-gradient(135deg, #248d91 10%, #5151e5 100%);
+  color: #ffffff;
+  font-weight: 700;
+  -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 200ms ease;
+  transition: -webkit-transform 200ms ease;
+  -o-transition: transform 200ms ease;
+  transition: transform 200ms ease;
+  transition: transform 200ms ease, -webkit-transform 200ms ease;
+  box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+.btn .feather {
+  height: 1em;
+  width: auto;
+  margin-right: 5px;
+}

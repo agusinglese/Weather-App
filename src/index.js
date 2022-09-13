@@ -4,12 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { WeatherProvider } from "./context/WeatherContext";
+import { LocationProvider } from "./context/LocationContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <React.StrictMode>
-      <App />
+      <LocationProvider>
+        <WeatherProvider>
+          <App />
+        </WeatherProvider>
+      </LocationProvider>
     </React.StrictMode>
   </BrowserRouter>
 );

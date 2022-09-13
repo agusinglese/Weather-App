@@ -1,0 +1,71 @@
+.imgCard {
+  height: 6rem;
+  width: auto;
+
+  padding: 0;
+}
+
+.conteiner {
+  border-radius: 25px;
+  box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+  background-color: #222831;
+  color: #ffffff;
+  width: 20vw;
+  position: relative;
+  margin: 2rem;
+}
+
+.searchBtn {
+  background-color: rgb(165, 67, 67);
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+}
+
+.boxTemp {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temp {
+  text-align: start;
+  margin: 0;
+  margin-left: 1.5rem;
+}
+
+.desc {
+  text-align: start;
+  margin-left: 1.5rem;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+
+.cityName {
+  color: white;
+  margin-bottom: 0;
+}
+
+.detail {
+  font-size: 0.8rem;
+  text-align: end;
+
+  margin-top: 0;
+  background-color: transparent;
+  border: none;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import WeatherContext from "../../context/WeatherContext.js";
 import Card from "../card/Card.jsx";
 import s from "./Cards.module.css";
 
-const Cards = ({ cities, onClose }) => {
-  console.log("soy cards");
+const Cards = () => {
+  const { cities, onClose, onOpen } = useContext(WeatherContext);
   if (cities ? (Array.isArray(cities) ? cities.length : false) : false) {
     return (
       <div className={s.card}>
@@ -16,13 +17,13 @@ const Cards = ({ cities, onClose }) => {
             id={e.id}
             key={e.id}
             temp={e.temp}
-            onClose={() => onClose(e.d)}
+            description={e.description}
+            onClose={() => onClose(e.id)}
+            onOpen={() => onOpen(e.id)}
           />
         ))}
       </div>
     );
-  } else {
-    return <div>Sin ciudades</div>;
   }
 };
 

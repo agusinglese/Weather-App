@@ -1,8 +1,11 @@
 import React from "react";
+import { useContext } from "react";
 import { useState } from "react";
+import WeatherContext from "../../context/WeatherContext";
 import s from "./Search.module.css";
 
-const Search = ({ onSearch }) => {
+const Search = () => {
+  const { onSearch } = useContext(WeatherContext);
   const [input, setInput] = useState("");
 
   const onChange = (e) => {
@@ -17,12 +20,12 @@ const Search = ({ onSearch }) => {
     <form className={s.formulario}>
       <input
         type="search"
-        placeholder="Search"
+        placeholder="Enter a city..."
         aria-label="Search"
         value={input}
         onChange={onChange}
       />
-      <button type="submit" onClick={onSubmit}>
+      <button type="submit" onClick={onSubmit} className={s.btn}>
         Search
       </button>
     </form>

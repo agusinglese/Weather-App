@@ -3,7 +3,7 @@ import Search from "../search/Search";
 import s from "./Nav.module.css";
 import { Link } from "react-router-dom";
 
-const Nav = ({ onSearch }) => {
+const Nav = () => {
   return (
     <div>
       <hr />
@@ -18,7 +18,7 @@ const Nav = ({ onSearch }) => {
             <li>Home</li>
           </Link>
         </ul>
-        <Search onSearch={onSearch} />
+        <Search />
       </nav>
     </div>
   );
