@@ -9,16 +9,14 @@ function App() {
   const { modalOpen } = useContext(WeatherContext);
   return (
     <div className="App">
-      <Route exact path="/">
+      <div className="cards">
         <CurrentCity />
-      </Route>
-
-      <Route exact path="/">
+      </div>
+      <div>
         <Cards />
-      </Route>
-      <Route exact path="/">
-        {modalOpen && <City />}
-      </Route>
+      </div>
+
+      {modalOpen && <City />}
     </div>
   );
 }

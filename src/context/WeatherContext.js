@@ -49,7 +49,7 @@ const WeatherProvider = ({ children }) => {
             longitud: data.coord.lon,
           };
           handleAddCity(city);
-        } else alert("Ciudad no encontrada");
+        } else alert("City not found");
       });
   };
 

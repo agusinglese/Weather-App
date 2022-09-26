@@ -13,9 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin-top: 3rem;
   background-color: #343d4b;
-  align-items: center;
-  justify-content: center;
-  display: flex;
 }
 
 code {
